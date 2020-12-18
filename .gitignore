@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/intellij,phpstorm,phpstorm+all,laravel,composer,phpunit,macos,windows,linux
-# Edit at https://www.toptal.com/developers/gitignore?templates=intellij,phpstorm,phpstorm+all,laravel,composer,phpunit,macos,windows,linux
+# Created by https://www.toptal.com/developers/gitignore/api/linux,macos,laravel,phpunit,windows,composer,intellij,phpstorm,phpstorm+all
+# Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,laravel,phpunit,windows,composer,intellij,phpstorm,phpstorm+all
 
 ### Composer ###
 composer.phar
@@ -353,6 +353,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-coverage
-
-# End of https://www.toptal.com/developers/gitignore/api/intellij,phpstorm,phpstorm+all,laravel,composer,phpunit,macos,windows,linux
+# End of https://www.toptal.com/developers/gitignore/api/linux,macos,laravel,phpunit,windows,composer,intellij,phpstorm,phpstorm+all
