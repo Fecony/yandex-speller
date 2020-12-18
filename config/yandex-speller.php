@@ -13,7 +13,7 @@ return [
     |
     */
     'lang' => [
-        'en', 'ru'
+        'en', 'ru',
     ],
 
     /*

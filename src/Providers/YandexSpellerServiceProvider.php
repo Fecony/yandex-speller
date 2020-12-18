@@ -15,7 +15,7 @@ class YandexSpellerServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../../config/yandex-speller.php' => config_path('yandex-speller.php'),
+            __DIR__.'/../../config/yandex-speller.php' => config_path('yandex-speller.php'),
         ], 'config');
     }
 
@@ -27,7 +27,7 @@ class YandexSpellerServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../../config/yandex-speller.php', 'yandex-speller'
+            __DIR__.'/../../config/yandex-speller.php', 'yandex-speller'
         );
 
         $this->app->singleton('yandex-speller', function () {
