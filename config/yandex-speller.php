@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Default Language Options
+    | Language Options
     |--------------------------------------------------------------------------
     |
     | This option specifies the default languages of the text to be checked
@@ -18,7 +18,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Default Format Option
+    | Format Option
     |--------------------------------------------------------------------------
     |
     | This option specifies the default format of the text to be checked.
