@@ -7,13 +7,14 @@
         "yandex-speller",
         "speller",
         "api",
-        "spellcheck"
+        "spellcheck",
+        "laravel"
     ],
     "authors": [
         {
             "name": "Ricards Tagils",
             "email": "tagils@mail.ru",
-            "role": "developer"
+            "role": "Developer"
         }
     ],
     "homepage": "https://github.com/fecony/yandex-speller",
@@ -32,7 +33,10 @@
     "autoload": {
         "psr-4": {
             "Fecony\\YandexSpeller\\": "src/"
-        }
+        },
+        "files": [
+            "src/Helpers/speller.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

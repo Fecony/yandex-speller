@@ -7,13 +7,13 @@ use GuzzleHttp\Client;
 class HttpClient
 {
     /** @var string API JSON interface */
-    public const API_URL = 'https://speller.yandex.net/services/spellservice.json/';
+    protected const API_URL = 'https://speller.yandex.net/services/spellservice.json/';
 
     /** @var string API endpoint to check single string */
-    public const CHECK_TEXT_ENDPOINT = 'checkText';
+    protected const CHECK_TEXT_ENDPOINT = 'checkText';
 
     /** @var string API endpoint to check array of strings */
-    public const CHECK_TEXTS_ENDPOINT = 'checkTexts';
+    protected const CHECK_TEXTS_ENDPOINT = 'checkTexts';
 
     /**
      * @var Client
