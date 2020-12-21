@@ -3,7 +3,7 @@
 use Fecony\YandexSpeller\YandexSpeller;
 use Illuminate\Http\JsonResponse;
 
-if (!function_exists('speller')) {
+if (! function_exists('speller')) {
 
     /**
      * Checks spelling in the specified $text passage.
