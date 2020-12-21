@@ -2,7 +2,8 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/fecony/yandex-speller.svg?style=flat-square)](https://packagist.org/packages/fecony/yandex-speller)
 [![Build Status](https://img.shields.io/travis/fecony/yandex-speller/master.svg?style=flat-square)](https://travis-ci.org/fecony/yandex-speller)
-[![Quality Score](https://img.shields.io/scrutinizer/g/fecony/yandex-speller.svg?style=flat-square)](https://scrutinizer-ci.com/g/fecony/yandex-speller)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Fecony/yandex-speller/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Fecony/yandex-speller/?branch=main)
+[![Style CI](https://github.styleci.io/repos/322412144/shield)](https://github.styleci.io/repos/322412144/shield)
 [![Total Downloads](https://img.shields.io/packagist/dt/fecony/yandex-speller.svg?style=flat-square)](https://packagist.org/packages/fecony/yandex-speller)
 
 // TODO
