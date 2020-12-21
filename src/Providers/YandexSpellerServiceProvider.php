@@ -12,7 +12,7 @@ class YandexSpellerServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         $this->publishes([
             __DIR__.'/../../config/yandex-speller.php' => config_path('yandex-speller.php'),
@@ -24,7 +24,7 @@ class YandexSpellerServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
         $this->mergeConfigFrom(
             __DIR__.'/../../config/yandex-speller.php', 'yandex-speller'
@@ -34,6 +34,8 @@ class YandexSpellerServiceProvider extends ServiceProvider
             return new YandexSpeller();
         });
 
-        $this->app->alias('yandex-speller', YandexSpeller::class);
+        $this->app->bind(YandexSpeller::class, function () {
+            return new YandexSpeller();
+        });
     }
 }
