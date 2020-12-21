@@ -69,7 +69,7 @@ class YandexSpeller extends HttpClient
 
             return response()->json([
                 'status' => $response->getStatusCode(),
-                'data' => $response->getBody()->getContents(),
+                'data' => json_decode($response->getBody()->getContents(), true, 512, JSON_THROW_ON_ERROR),
             ], $response->getStatusCode());
         } catch (GuzzleException $e) {
             return response()->json([
