@@ -16,7 +16,7 @@ class YandexSpellerServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../../config/yandex-speller.php' => config_path('yandex-speller.php'),
-        ], 'config');
+        ], 'yandex-speller');
     }
 
     /**

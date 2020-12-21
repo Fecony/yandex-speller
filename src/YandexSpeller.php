@@ -42,9 +42,9 @@ class YandexSpeller extends HttpClient
      * @param string|null $lang
      * @param int|null $options
      * @param string|null $format
-     * @return JsonResponse|mixed
+     * @return JsonResponse|null
      */
-    public function check($text, string $lang = null, int $options = null, string $format = null)
+    public function check($text, string $lang = null, int $options = null, string $format = null): ?JsonResponse
     {
         $this->text = $text;
         $this->lang = $lang;
@@ -56,9 +56,9 @@ class YandexSpeller extends HttpClient
     }
 
     /**
-     * @return JsonResponse|mixed
+     * @return JsonResponse
      */
-    private function checkText()
+    private function checkText(): ?JsonResponse
     {
         $query = $this->getQuery();
 
@@ -67,7 +67,10 @@ class YandexSpeller extends HttpClient
                 'query' => $query,
             ]);
 
-            return json_decode($response->getBody(), true, 512, JSON_THROW_ON_ERROR);
+            return response()->json([
+                'status' => $response->getStatusCode(),
+                'data' => $response->getBody()->getContents(),
+            ], $response->getStatusCode());
         } catch (GuzzleException $e) {
             return response()->json([
                 'error' => $e->getMessage(),
