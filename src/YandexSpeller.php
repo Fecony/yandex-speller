@@ -8,25 +8,25 @@ use Illuminate\Http\JsonResponse;
 
 class YandexSpeller extends HttpClient
 {
-    /** @var string $uri contains an API endpoint */
+    /** @var string contains an API endpoint */
     protected $uri;
 
-    /** @var string|array $text contains passed in string or array of strings. */
+    /** @var string|array contains passed in string or array of strings. */
     protected $text;
 
-    /** @var string|null $lang may contain comma separated languages to override default config. */
+    /** @var string|null may contain comma separated languages to override default config. */
     protected $lang;
 
-    /** @var int|null $options optional parameter value is the sum of the values of the required options. */
+    /** @var int|null optional parameter value is the sum of the values of the required options. */
     protected $options;
 
-    /** @var string|null $format option specifies the default format of the text. */
+    /** @var string|null option specifies the default format of the text. */
     protected $format;
 
-    /** @var array $query query options used to determine API behaviour. */
+    /** @var array query options used to determine API behaviour. */
     protected $query;
 
-    /** @var array $queryOptions contains supported options. */
+    /** @var array contains supported options. */
     protected $queryOptions = [
         'lang',
         'options',
@@ -89,7 +89,7 @@ class YandexSpeller extends HttpClient
     protected function buildQueryParams(): array
     {
         foreach ($this->queryOptions as $option) {
-            $this->query[$option] = $this->{$option} ?: config('yandex-speller.' . $option);
+            $this->query[$option] = $this->{$option} ?: config('yandex-speller.'.$option);
         }
 
         return $this->query;
