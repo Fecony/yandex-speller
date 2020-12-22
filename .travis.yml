@@ -4,12 +4,19 @@ php:
     - 7.3
     - 7.4
 
-before_script:
-    - travis_retry composer self-update
-    - travis_retry composer install --no-interaction --prefer-source --dev
+install:
+    - travis_retry composer install --no-interaction --no-suggest
 
 script:
-    - composer ci
+    - composer test -- --coverage-clover=coverage.xml
 
 after_success:
-    - bash <(curl -s https://codecov.io/bash)
+    - bash <(curl -s https://codecov.io/bash) -v
+
+branches:
+    only:
+        - main
+
+cache:
+    directories:
+        - $HOME/.composer/cache
