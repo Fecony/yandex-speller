@@ -10,14 +10,14 @@ class YandexSpellerTest extends TestCase
     /** @test */
     public function it_returns_response_object()
     {
-        $response = YandexSpeller::check("Helllo");
+        $response = YandexSpeller::check('Helllo');
         $this->assertInstanceOf(JsonResponse::class, $response);
     }
 
     /** @test */
     public function it_returns_success_status_code()
     {
-        $response = YandexSpeller::check("Helllo");
+        $response = YandexSpeller::check('Helllo');
         $this->assertEquals(200, $response->getStatusCode());
     }
 
@@ -27,7 +27,7 @@ class YandexSpellerTest extends TestCase
         // It will return empty result since passed text in different language
         config()->set('yandex-speller.lang', 'en');
 
-        $response = YandexSpeller::check("приветд мир");
+        $response = YandexSpeller::check('приветд мир');
         $jsonResponse = json_decode($response->content(), true, 512, JSON_THROW_ON_ERROR);
 
         $this->assertJson($response->getContent());
@@ -37,7 +37,7 @@ class YandexSpellerTest extends TestCase
     /** @test */
     public function it_returns_response_from_helper_function()
     {
-        $response = speller("Hello world!");
+        $response = speller('Hello world!');
         $jsonResponse = json_decode($response->content(), true, 512, JSON_THROW_ON_ERROR);
 
         $this->assertInstanceOf(JsonResponse::class, $response);
@@ -48,7 +48,7 @@ class YandexSpellerTest extends TestCase
     /** @test */
     public function it_returns_response_with_suggestions()
     {
-        $response = speller("Helllo world!");
+        $response = speller('Helllo world!');
         $jsonResponse = json_decode($response->content(), true, 512, JSON_THROW_ON_ERROR);
 
         $this->assertInstanceOf(JsonResponse::class, $response);
@@ -61,7 +61,7 @@ class YandexSpellerTest extends TestCase
     /** @test */
     public function it_returns_response_with_suggestions_from_helper_function()
     {
-        $response = speller("Helllo world!");
+        $response = speller('Helllo world!');
         $jsonResponse = json_decode($response->content(), true, 512, JSON_THROW_ON_ERROR);
 
         $this->assertInstanceOf(JsonResponse::class, $response);
@@ -74,11 +74,11 @@ class YandexSpellerTest extends TestCase
     /** @test */
     public function it_returns_response_with_suggestions_for_array_of_strings()
     {
-        $wordOne = "Helllo";
-        $wordTwo = "Worrld";
+        $wordOne = 'Helllo';
+        $wordTwo = 'Worrld';
 
-        $expectedSuggestionOne = "Hello";
-        $expectedSuggestionTwo = "World";
+        $expectedSuggestionOne = 'Hello';
+        $expectedSuggestionTwo = 'World';
 
         $response = speller([$wordOne, $wordTwo]);
         $jsonResponse = json_decode($response->content(), true, 512, JSON_THROW_ON_ERROR);
@@ -106,7 +106,7 @@ class YandexSpellerTest extends TestCase
     public function method_params_allow_to_rewrite_config()
     {
         // It will return empty result since passed text in different language
-        $response = YandexSpeller::check("приветд мир", "en");
+        $response = YandexSpeller::check('приветд мир', 'en');
         $jsonResponse = json_decode($response->getContent(), true, 512, JSON_THROW_ON_ERROR);
 
         $this->assertJson($response->getContent());
