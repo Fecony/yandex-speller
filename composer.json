@@ -27,7 +27,8 @@
     "require-dev": {
         "orchestra/testbench": "^6.7",
         "phpunit/phpunit": "^9.5",
-        "roave/security-advisories": "dev-master"
+        "roave/security-advisories": "dev-master",
+        "sempro/phpunit-pretty-print": "^1.3"
     },
     "autoload": {
         "psr-4": {
@@ -43,12 +44,7 @@
         }
     },
     "scripts": {
-        "test": "phpunit",
-        "test-coverage": "phpunit --coverage-html coverage",
-        "ci": [
-            "@test",
-            "@test-coverage"
-        ]
+        "test": "vendor/bin/phpunit"
     },
     "config": {
         "sort-packages": true

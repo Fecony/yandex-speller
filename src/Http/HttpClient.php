@@ -15,9 +15,7 @@ class HttpClient
     /** @var string API endpoint to check array of strings */
     protected const CHECK_TEXTS_ENDPOINT = 'checkTexts';
 
-    /**
-     * @var Client
-     */
+    /** @var Client Guzzle http client */
     protected $client;
 
     public function __construct()
