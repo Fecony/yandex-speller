@@ -44,7 +44,14 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit"
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-xml coverage",
+        "coverage": "vendor/bin/phpunit --coverage-clover coverage.xml",
+        "ci": [
+            "@test",
+            "@test-coverage",
+            "@coverage"
+        ]
     },
     "config": {
         "sort-packages": true
