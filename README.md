@@ -1,10 +1,11 @@
 # Very short description of the package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/fecony/yandex-speller.svg?style=flat-square)](https://packagist.org/packages/fecony/yandex-speller)
-[![Build Status](https://img.shields.io/travis/fecony/yandex-speller/master.svg?style=flat-square)](https://travis-ci.org/fecony/yandex-speller)
+[![Total Downloads](https://img.shields.io/packagist/dt/fecony/yandex-speller.svg?style=flat-square)](https://packagist.org/packages/fecony/yandex-speller)
+[![Build Status](https://img.shields.io/travis/Fecony/yandex-speller/main?style=flat-square)](https://travis-ci.org/Fecony/yandex-speller)
+![Codecov](https://img.shields.io/codecov/c/github/Fecony/yandex-speller?style=flat-square)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Fecony/yandex-speller/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Fecony/yandex-speller/?branch=main)
 [![Style CI](https://github.styleci.io/repos/322412144/shield)](https://github.styleci.io/repos/322412144/shield)
-[![Total Downloads](https://img.shields.io/packagist/dt/fecony/yandex-speller.svg?style=flat-square)](https://packagist.org/packages/fecony/yandex-speller)
 
 // TODO
 

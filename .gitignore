@@ -353,4 +353,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+coverage.*
+
 # End of https://www.toptal.com/developers/gitignore/api/linux,macos,laravel,phpunit,windows,composer,intellij,phpstorm,phpstorm+all
