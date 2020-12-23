@@ -2,9 +2,9 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/fecony/yandex-speller.svg?style=flat-square)](https://packagist.org/packages/fecony/yandex-speller)
 [![Total Downloads](https://img.shields.io/packagist/dt/fecony/yandex-speller.svg?style=flat-square)](https://packagist.org/packages/fecony/yandex-speller)
-[![Build Status](https://img.shields.io/travis/Fecony/yandex-speller/main?style=flat-square)](https://travis-ci.org/Fecony/yandex-speller)
-![Codecov](https://img.shields.io/codecov/c/github/Fecony/yandex-speller?style=flat-square)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Fecony/yandex-speller/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Fecony/yandex-speller/?branch=main)
+[![Build Status](https://img.shields.io/travis/Fecony/yandex-speller/main?style=flat-square)](https://www.travis-ci.com/Fecony/yandex-speller)
+[![Codecov](https://codecov.io/gh/Fecony/yandex-speller/branch/main/graph/badge.svg?token=NXT7HW7W6B)](https://codecov.io/gh/Fecony/yandex-speller)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/quality/g/fecony/yandex-speller/main?style=flat-square)](https://scrutinizer-ci.com/g/Fecony/yandex-speller/?branch=main)
 [![Style CI](https://github.styleci.io/repos/322412144/shield)](https://github.styleci.io/repos/322412144/shield)
 
 Simple Laravel Yandex Speller API response wrapper.
