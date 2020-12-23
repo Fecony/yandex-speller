@@ -19,7 +19,7 @@
     ],
     "homepage": "https://github.com/fecony/yandex-speller",
     "require": {
-        "php": "^7.3",
+        "php": ">=7.3",
         "guzzlehttp/guzzle": "^7.2",
         "illuminate/support": "^8.19",
         "ext-json": "*"
