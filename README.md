@@ -78,7 +78,7 @@ If you need to customize the default config, you can do it directly on the `yand
 | format  | 'plain' | This option specifies the default format of the text to be checked.                                                                                                                |
 | options | 0       | This option specifies the behaviour of the API. The parameter value is the sum of the option values. Refer to: https://yandex.ru/dev/speller/doc/dg/reference/speller-options.html |
 
-### Testing
+## Testing
 
 ```bash
 composer test
@@ -95,7 +95,7 @@ For example:
 -   [ ] Return text with suggestions applied.
 -   [ ] etc...
 
-### Changelog
+## Changelog
 
 <!-- TODO -->
 
