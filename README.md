@@ -61,12 +61,12 @@ public function index()
 
 ## Advanced usage
 
-Both `check()` and `response()` methods accept four parameters:
+Both `YandexSpeller::check()` method and `speller()` helper accept four parameters:
 
--   `string | array $text` text sting or array of strings to check spelling
--   `string | null $lang` used to rewrite config defined $lang parameter, comma separated languages
--   `int | null $options` used to rewrite config defined $options parameter, sum of possible options
--   `string | null $format` used to rewrite config defined $format parameter, 'plain' or 'html'
+-   `string | array $text` text sting or array of strings to check spelling.
+-   `string | null $lang` used to rewrite config defined $lang parameter, comma separated languages, optional.
+-   `int | null $options` used to rewrite config defined $options parameter, sum of possible options, optional.
+-   `string | null $format` used to rewrite config defined $format parameter, 'plain' or 'html', optional.
 
 ## Configuration
 
